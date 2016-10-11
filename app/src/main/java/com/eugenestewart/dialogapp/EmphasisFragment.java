@@ -44,10 +44,13 @@ public class EmphasisFragment extends DialogFragment {
                 .setMultiChoiceItems(EMPHASIS_CHOICES, checked, new DialogInterface.OnMultiChoiceClickListener(){
                     @Override
                     public void onClick(DialogInterface dialog, int which, boolean isChecked) {
-                        builder.setPositiveButton(DialogInterface.OnClickListener);
+                        mListener.emphasisSelected(which);
+
+
 
                     }
                 });
+
 
         return builder.create();
     }

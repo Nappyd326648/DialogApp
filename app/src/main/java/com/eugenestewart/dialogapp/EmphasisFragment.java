@@ -39,12 +39,13 @@ public class EmphasisFragment extends DialogFragment {
     }
     @Override
     public Dialog onCreateDialog(Bundle savedInsanceState){
-        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle("Choose a Emphasis")
                 .setMultiChoiceItems(EMPHASIS_CHOICES, checked, new DialogInterface.OnMultiChoiceClickListener(){
                     @Override
                     public void onClick(DialogInterface dialog, int which, boolean isChecked) {
-                        
+                        builder.setPositiveButton(DialogInterface.OnClickListener);
+
                     }
                 });
 
